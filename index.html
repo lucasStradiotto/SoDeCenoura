@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Só de Cenoura Garçom</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+<body>
+
+    <div class="topoFixo z-depth-1">
+        <div class="valign-wrapper yellow darken-4 white-text">
+            <h5 class="titulo">Só de Cenoura</h5>
+
+		<div>
+			<i data-activates="submenu" data-gutter="5"  data-contrainwidth="false" class="material-icons waves-effect waves-light waves-circle dropdown-button">more_vert</i>
+		</div>
+
+			<ul class="dropdown-content" id="submenu">
+				<li><a class="acao-limpar black-text">Limpar</a></li>
+			</ul>
+
+        </div>
+
+        <ul class="tabs yellow darken-4">
+            <li class="tab"> <a href="#bolos" class="white-text waves-effect waves-light">Bolos</a></li>
+            <li class="tab"><a href="#bebidas" class="white-text waves-effect waves-light">Bebidas</a></li>
+        </ul>
+    </div>
+
+	<div class="section " id="bolos">
+		<h6 class="container brown-text">Bolo Chocolate</h6>
+		<div class="collection">
+			
+            
+            <a class="collection-item black-text">Bicolor</a>
+			
+            <a class="collection-item black-text">Brigadeiro</a>
+            
+			<a class="collection-item black-text">Sensação</a>
+            
+			<a class="collection-item black-text">Nutella</a>
+            
+            
+		</div>
+		
+		<h6 class="container brown-text">Bolo - Outros</h6>
+		<div class="collection">
+			<a class="collection-item black-text">Açucarado</a>
+			<a class="collection-item black-text">Formigueiro</a>
+			<a class="collection-item black-text">Fubá</a>
+			<a class="collection-item black-text">Milho</a>
+		</div>
+	</div>
+
+
+	<div class="section" id="bebidas">
+		<h6 class="container brown-text">Cafés</h6>
+		<div class="collection">
+			<a class="collection-item black-text">Café Espresso</a>
+			<a class="collection-item black-text">Mocca Latte</a>
+			<a class="collection-item black-text">Capuccino</a>
+			<a class="collection-item black-text">Choco Quente</a>
+		</div>
+		<h6 class="container brown-text">Refrigerantes</h6>
+		<div class="collection">
+			<a class="collection-item black-text">Coca-Cola</a>
+			<a class="collection-item black-text">Guaraná Antártica</a>
+			<a class="collection-item black-text">Suco de Laranja</a>
+		</div>
+
+		<h6 class="container brown-text">Sucos Naturais</h6>
+		<div class="collection">
+			<a class="collection-item black-text">Laranja</a>
+			<a class="collection-item black-text">Melancia</a>
+			<a class="collection-item black-text">Limão</a>
+		</div>
+	</div>
+	
+
+	<div class="fixed-action-btn">
+		<a href="#confirmacao" class="btn-floating btn-large waves-effect waves-light waves-circle blue modal-trigger" id="confirmar">
+			<i class="material-icons">
+				done
+			</i>
+		</a>
+	</div>
+
+
+	<div class="modal modal-fixed-footer" id="confirmacao" >
+		<div class="modal-content">
+			<h5>Resumo do Pedido</h5>
+			<input type="number" placeholder="Número da Mesa" class="validate" min="1" id="numero-mesa">
+
+			<blockquote id="resumo">
+				
+			</blockquote>
+
+
+		</div>
+
+		<div class="modal-footer">
+			<button class="btn deep-orange waves-effect waves-light modal-close" id="btn-pedir">Pedir</button>
+			<button class="btn-flat waves-red waves-effect waves-light modal-close" id="btn-cancelar">Cancelar</button>
+		</div>
+
+	</div>
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
